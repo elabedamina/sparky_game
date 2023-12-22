@@ -74,7 +74,7 @@ class GameSparky extends FlameGame with DragCallbacks, HasCollisionDetection {
       textRenderer: TextPaint(
         style: const TextStyle(
           color: Color(0xFFE89512),
-          fontSize: 25,
+          fontSize: 20,
         ),
       ),
     );
@@ -88,7 +88,7 @@ class GameSparky extends FlameGame with DragCallbacks, HasCollisionDetection {
       textRenderer: TextPaint(
         style: const TextStyle(
           color: Color(0xFFE89512),
-          fontSize: 25,
+          fontSize: 20,
           fontFamily: 'Coiny',
         ),
       ),
@@ -108,6 +108,7 @@ class GameSparky extends FlameGame with DragCallbacks, HasCollisionDetection {
     _timerText.text = 'Time: $_remainingTime secs';
     if (score == 15) {
       pauseEngine();
+      reset();
       overlays.add(DashScreen.ID);
     }
   }
