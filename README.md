@@ -1,4 +1,4 @@
-# Firebase Dash Adventure
+# Sparky Game
 
 Welcome to the vibrant digital world of Firebase Land! Join Sparky, the lovable mascot, on a thrilling mission to make his best friend Dash's birthday extra special. However, mischievous Bug Bots, jealous of Dash's upcoming celebration, have stolen all the carefully collected gifts. Will Sparky overcome the challenges, defeat the Bug Bots, and ensure a joyous birthday for Dash?
 
