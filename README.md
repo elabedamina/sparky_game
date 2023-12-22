@@ -32,6 +32,8 @@ The game is developed using the Flame 2D game engine for Flutter, showcasing its
 4. Grab power-up flames to temporarily double Sparky's speed.
 5. Race against the countdown timer to complete the mission before time runs out.
 
+> you need to collect 15 noogler hat in order to win the game.
+
 ## Getting Started
 
 To run the game locally, follow these steps:
