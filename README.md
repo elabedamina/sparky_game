@@ -36,8 +36,8 @@ The game is developed using the Flame 2D game engine for Flutter, showcasing its
 
 To run the game locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/firebase-dash-adventure.git`
-2. Navigate to the project directory: `cd firebase-dash-adventure`
+1. Clone the repository: `git clone https://github.com/elabedamina/sparky_game.git`
+2. Navigate to the project directory: `cd sparky_game`
 3. Install dependencies: `flutter pub get`
 4. Run the game: `flutter run`
 
