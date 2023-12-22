@@ -4,7 +4,7 @@ Welcome to the vibrant digital world of Firebase Land! Join Sparky, the lovable 
 
 ## Game Overview
 
-Firebase Dash Adventure is a simple 2D game built with the Flame game engine by Flutter. This game showcases the main features of a 2D game.
+Sparky Game is a simple 2D game built with the Flame game engine by Flutter. This game showcases the main features of a 2D game.
 
 ## Key Features
 
