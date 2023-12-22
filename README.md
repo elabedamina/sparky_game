@@ -1,10 +1,10 @@
-# Firebase Dash Adventure
+# Sparky Game
 
 Welcome to the vibrant digital world of Firebase Land! Join Sparky, the lovable mascot, on a thrilling mission to make his best friend Dash's birthday extra special. However, mischievous Bug Bots, jealous of Dash's upcoming celebration, have stolen all the carefully collected gifts. Will Sparky overcome the challenges, defeat the Bug Bots, and ensure a joyous birthday for Dash?
 
 ## Game Overview
 
-Firebase Dash Adventure is a simple 2D game built with the Flame game engine by Flutter. This game showcases the main features of a 2D game.
+Sparky Game is a simple 2D game built with the Flame game engine by Flutter. This game showcases the main features of a 2D game.
 
 ## Key Features
 
@@ -31,6 +31,8 @@ The game is developed using the Flame 2D game engine for Flutter, showcasing its
 3. Avoid collisions with the mischievous Bug Bots to maintain Sparky's progress.
 4. Grab power-up flames to temporarily double Sparky's speed.
 5. Race against the countdown timer to complete the mission before time runs out.
+
+> you need to collect 15 noogler hat in order to win the game.
 
 ## Getting Started
 
