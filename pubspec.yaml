@@ -1,0 +1,40 @@
+name: sparky_game
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flame: ^1.13.0
+  flame_audio: ^2.1.6
+  stroke_text: ^0.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/dash.png
+    - assets/audio/
+
+  fonts:
+    - family: Coiny
+      fonts:
+        - asset: assets/fonts/Coiny-Regular.ttf
