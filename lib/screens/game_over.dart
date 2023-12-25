@@ -12,69 +12,66 @@ class GameOver extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        width: MediaQuery.of(context).size.width * 0.65,
-        height: MediaQuery.of(context).size.height * 0.55,
+        width: MediaQuery.of(context).size.width * 0.7,
+        height: MediaQuery.of(context).size.height * 0.45,
         decoration: BoxDecoration(
-            color: const Color(0xffFFE98E).withOpacity(0.8),
+            color: const Color(0xffD7FFFF).withOpacity(0.55),
             borderRadius: BorderRadius.circular(40.0)),
-        child: Column(
-          children: [
-            Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Padding(
-                      padding: EdgeInsets.only(
-                          top: MediaQuery.of(context).size.height * 0.05),
-                      child: const StrokeText(
-                        text: "GAME\nOVER",
-                        textStyle:
-                            TextStyle(fontSize: 40, color: Color(0xffEE920C)),
-                        strokeColor: Color(0Xff333333),
-                        strokeWidth: 5,
-                      )),
-                  Padding(
-                    padding: EdgeInsets.only(
-                        top: MediaQuery.of(context).size.height * 0.03),
-                    child: Text(
-                      'Score: ${gameRef.score}',
-                      style: const TextStyle(
-                          fontSize: 35,
-                          fontFamily: 'Coiny',
-                          color: Colors.black),
-                    ),
-                  ),
-                  SizedBox(height: MediaQuery.of(context).size.height * 0.05),
-                  GestureDetector(
-                      onTap: () {
-                        gameRef.removeMenu(menu: GameOver.ID);
-                        gameRef.reset();
-                        gameRef.resumeEngine();
-                      },
-                      child: Container(
-                        width: MediaQuery.of(context).size.width * 0.5,
-                        height: MediaQuery.of(context).size.height * 0.1,
-                        decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 139, 201, 240)
-                              .withOpacity(0.9), // Background color
-                          borderRadius:
-                              BorderRadius.circular(40.0), // Border radius
-                        ),
-                        child: const Center(
-                          child: StrokeText(
-                            text: "play again?",
-                            textStyle: TextStyle(
-                                fontSize: 25,
-                                color: Color.fromARGB(255, 33, 106, 151)),
-                            strokeColor: Color.fromARGB(255, 21, 64, 91),
-                            strokeWidth: 1,
-                          ),
-                        ),
-                      )),
-                ],
+        child: Center(
+          child: Column(
+            children: [
+              Padding(
+                  padding: EdgeInsets.only(
+                      top: MediaQuery.of(context).size.height * 0.05),
+                  child: const StrokeText(
+                    text: "Game\nover !",
+                    textStyle: TextStyle(
+                        fontSize: 50,
+                        color: Color(0xffEE920C),
+                        decoration: TextDecoration.none),
+                    strokeColor: Color(0Xff333333),
+                    strokeWidth: 4,
+                  )),
+              Padding(
+                padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.03),
+                child: Text(
+                  'Score: ${gameRef.score}',
+                  style: const TextStyle(
+                      fontFamily: 'Poly',
+                      fontSize: 35,
+                      color: Color(0xff363636),
+                      decoration: TextDecoration.none),
+                ),
               ),
-            ),
-          ],
+              SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+              GestureDetector(
+                  onTap: () {
+                    gameRef.removeMenu(menu: GameOver.ID);
+                    gameRef.reset();
+                    gameRef.resumeEngine();
+                  },
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 0.48,
+                    height: MediaQuery.of(context).size.height * 0.09,
+                    decoration: BoxDecoration(
+                      color: const Color(0xffFFE98E), // Background color
+                      borderRadius:
+                          BorderRadius.circular(20.0), // Border radius
+                    ),
+                    child: const Center(
+                      child: Text(
+                        "play again?",
+                        style: TextStyle(
+                            fontFamily: 'Poly',
+                            fontSize: 25,
+                            color: Color(0xff363636),
+                            decoration: TextDecoration.none),
+                      ),
+                    ),
+                  )),
+            ],
+          ),
         ),
       ),
     );

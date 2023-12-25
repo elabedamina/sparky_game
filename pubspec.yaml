@@ -19,6 +19,7 @@ dependencies:
   flame: ^1.13.0
   flame_audio: ^2.1.6
   stroke_text: ^0.0.2
+  confetti: ^0.7.0
 
 dev_dependencies:
   flutter_test:
@@ -38,3 +39,7 @@ flutter:
     - family: Coiny
       fonts:
         - asset: assets/fonts/Coiny-Regular.ttf
+
+    - family: Poly
+      fonts:
+        - asset: assets/fonts/Poly-Regular.ttf

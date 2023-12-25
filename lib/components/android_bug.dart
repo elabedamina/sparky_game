@@ -11,7 +11,7 @@ class AndroidBugComponent extends SpriteComponent
   final double _spriteHeight = 90;
   final Vector2 startPosition;
   late Vector2 _velocity;
-  double speed = 100;
+  double speed = 150;
   double degree = math.pi / 180;
 
   AndroidBugComponent({required this.startPosition});

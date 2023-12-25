@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sparky_game/screens/game_play.dart';
+import 'package:sparky_game/screens/dialog_screeen.dart';
 
 class MainScreen extends StatelessWidget {
   static const String ID = 'MainScreen';
@@ -30,18 +30,20 @@ class MainScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   child: const StrokeText(
                     text: "SPARKY\nGAME",
-                    textStyle:
-                        TextStyle(fontSize: 60, color: Color(0xffEE920C)),
+                    textStyle: TextStyle(
+                        fontSize: 60,
+                        color: Color(0xffEE920C),
+                        decoration: TextDecoration.none),
                     strokeColor: Color(0Xff333333),
                     strokeWidth: 5,
                   )),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.4,
+                height: MediaQuery.of(context).size.height * 0.47,
               ),
               GestureDetector(
                   onTap: () {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => const GamePlay()));
+                        builder: (context) => const DialogScreen()));
                   },
                   child: Container(
                     width: MediaQuery.of(context).size.width * 0.5,
@@ -53,17 +55,21 @@ class MainScreen extends StatelessWidget {
                     ),
                     child: Row(
                       children: [
+                        SizedBox(
+                            width: MediaQuery.of(context).size.width * 0.02),
                         Icon(Icons.play_arrow,
                             size: MediaQuery.of(context).size.width *
-                                0.1, // Adjust the size as needed
+                                0.15, // Adjust the size as needed
                             color: const Color(0xffB97408)), // A
 
                         SizedBox(
-                            width: MediaQuery.of(context).size.width * 0.01),
+                            width: MediaQuery.of(context).size.width * 0.02),
                         const StrokeText(
                           text: "PLAY",
-                          textStyle:
-                              TextStyle(fontSize: 30, color: Color(0xffEE920C)),
+                          textStyle: TextStyle(
+                              fontSize: 30,
+                              color: Color(0xffEE920C),
+                              decoration: TextDecoration.none),
                           strokeColor: Color(0XffB97408),
                           strokeWidth: 3,
                         ),

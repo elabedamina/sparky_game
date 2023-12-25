@@ -11,11 +11,13 @@ class GamePlay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GameWidget(game: _sparkyGame, overlayBuilderMap: {
-      GameOver.ID: (BuildContext context, GameSparky gameRef) =>
-          GameOver(gameRef: gameRef),
-      DashScreen.ID: (BuildContext context, GameSparky gameRef) =>
-          DashScreen(gameRef: gameRef)
-    });
+    return PopScope(
+        canPop: false,
+        child: GameWidget(game: _sparkyGame, overlayBuilderMap: {
+          GameOver.ID: (BuildContext context, GameSparky gameRef) =>
+              GameOver(gameRef: gameRef),
+          DashScreen.ID: (BuildContext context, GameSparky gameRef) =>
+              DashScreen(gameRef: gameRef)
+        }));
   }
 }

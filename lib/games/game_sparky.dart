@@ -45,7 +45,8 @@ class GameSparky extends FlameGame with DragCallbacks, HasCollisionDetection {
     add(SparkyComponent(joystick: joystick));
     add(NooglerHatComponent());
     add(joystick);
-    add(AndroidBugComponent(startPosition: Vector2(100, 50)));
+    add(AndroidBugComponent(startPosition: Vector2(100, 200)));
+    add(AndroidBugComponent(startPosition: Vector2(250, 300)));
 
     FlameAudio.audioCache.loadAll(
         [Constants.grabSound, Constants.hitSound, Constants.flameSound]);
@@ -73,7 +74,7 @@ class GameSparky extends FlameGame with DragCallbacks, HasCollisionDetection {
       anchor: Anchor.topLeft,
       textRenderer: TextPaint(
         style: const TextStyle(
-          color: Color(0xFFE89512),
+          color: Color(0xFF363636),
           fontSize: 20,
         ),
       ),
@@ -87,7 +88,7 @@ class GameSparky extends FlameGame with DragCallbacks, HasCollisionDetection {
       anchor: Anchor.topRight,
       textRenderer: TextPaint(
         style: const TextStyle(
-          color: Color(0xFFE89512),
+          color: Color(0xFF363636),
           fontSize: 20,
           fontFamily: 'Coiny',
         ),
@@ -121,6 +122,32 @@ class GameSparky extends FlameGame with DragCallbacks, HasCollisionDetection {
       min: 10,
       max: 35,
     );
+  }
+
+  void restart() {
+    score = 0;
+    _remainingTime = 35;
+
+    flameAppearance = _getRandomInt(
+      min: 10,
+      max: 35,
+    );
+
+    removeAll([
+      joystick,
+      SparkyComponent(joystick: joystick),
+      NooglerHatComponent(),
+      AndroidBugComponent(
+        startPosition: Vector2(100, 200),
+      ),
+      AndroidBugComponent(startPosition: Vector2(250, 300)),
+    ]);
+
+    add(SparkyComponent(joystick: joystick));
+    add(NooglerHatComponent());
+    add(joystick);
+    add(AndroidBugComponent(startPosition: Vector2(100, 200)));
+    add(AndroidBugComponent(startPosition: Vector2(250, 300)));
   }
 
   void addMenu({
