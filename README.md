@@ -43,6 +43,6 @@ To run the game locally, follow these steps:
 3. Install dependencies: `flutter pub get`
 4. Run the game: `flutter run`
 
-Enjoy the Firebase Dash Adventure and help Sparky make Dash's birthday celebration unforgettable!
+Enjoy the Game and help Sparky make Dash's birthday celebration unforgettable!
 
 ---
